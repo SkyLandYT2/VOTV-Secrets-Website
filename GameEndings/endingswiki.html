@@ -19,6 +19,47 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .button {
+  background-color: #4CAF50; /* Зеленый цвет */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px; /* Скругление углов */
+  transition: all 0.3s ease; /* Плавная анимация */
+}
+
+/* Стиль при наведении курсора */
+.button:hover {
+  background-color: #3e8e41; /* Темнее при наведении */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Тень */
+}
+
+/* Стиль при нажатии */
+.button:active {
+  background-color: #367c39; /* Еще темнее при нажатии */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Меньшая тень */
+  transform: translateY(2px); /* Небольшое смещение вниз */
+}
+
+/* Стиль для кнопок с различным фоновым цветом */
+.button-blue {
+  background-color: #2196F3; /* Синий */
+}
+
+.button-red {
+  background-color: #f44336; /* Красный */
+}
+
+.button-small {
+  font-size: 12px;
+  padding: 10px 20px;
+}
     </style>
 </head>
 <body>
@@ -33,9 +74,9 @@
         <p style="text-align:center;">In Voices of the Void, there are multiple game endings. Each of these endings have different ways of being obtained and triggered.</p>
         <div class="content" style=" left: -0.68%;"><hr></div>
         <h3 id="normal" style="text-align:center; font-style:oblique;">Normal Ending</h3>
-        <p style="text-align:center;">To achieve this, you must play at least 44-45 days in story mode to unlock.</p>
+        <p style="text-align:center;">To achieve this, you must play all events days in story mode to unlock.</p>
         <p style="text-align:center;">
-            <button id="moreInfoBtn1">More Information</button>
+            <button class="button button-red button-small" id="moreInfoBtn1">More Information</button>
             <div id="moreInfo1" style="display: none; color: white;">
                 <pre>
                                                                 This appears to be symbolic of Dr. Kel's insanity or the player's  own character's insanity catching up to him.
@@ -44,7 +85,7 @@
         </p>
         <div class="content" style=" left: -0.68%;"><hr></div>
         <h3 id="worst" style="text-align:center; font-style:oblique;">Worst Ending</h3>
-        <p style="text-align:center;">To trigger this ending, you need to catch, download, process to level 3, and send over the <a style="color: greenyellow;" href="/web/20240328021956/../Signals/specialsigswiki.html#evil">Evil Signal</a>.</p>
+        <p style="text-align:center;">To trigger this ending, you need to catch, download, process to level 3, and send over the <a style="color: greenyellow;" href="../Signals/specialsigswiki.html#evil">Evil Signal</a>.</p>
         <div class="container">
             <img src="./Images/1.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
@@ -56,14 +97,14 @@
         <div class="container">
             <img src="./Images/3.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
             <img src="./Images/4.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
-            <img src="./Images/.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
+            <img src="./Images/11.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">Then you are shown a terminal in which it explains what happens to you. You are terminated and converted by some mysterious beings. In this ending you kill and convert everything on Earth. This is the result of the Evil spreading towards Earth.</p>
         <div class="container">
             <img src="./Images/6.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">
-            <button id="moreInfoBtn">More Information</button>
+            <button class="button button-red button-small" id="moreInfoBtn">More Information</button>
             <div id="moreInfo" style="display: none; color: white;">
                 <pre>
                                                                 While it is unknown who types out this message, it has been theorized to be the Arirals. 
@@ -122,7 +163,7 @@
             <img src="./Images/10.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">
-            <button id="moreInfoBtn0">More Information</button>
+            <button class="button button-red button-small" id="moreInfoBtn0">More Information</button>
             <div id="moreInfo0" style="display: none; color: white;">
                 <pre>
                                                                 It is also unknown who types out this message but it is theorized to be Rozitals. 
