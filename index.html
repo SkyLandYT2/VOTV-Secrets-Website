@@ -60,6 +60,60 @@
             margin: 0 auto;
             border-radius: 10px;
         }
+        #promoTabsContainer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            z-index: 1000;
+        }
+        #promoTab1, #promoTab2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 7px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        #promoTab2 {
+            z-index: 2; /* Ensures promoTab2 is above promoTab1 */
+        }
+        #socialLinks {
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #0c33ee;
+        }
+        #promoTab1:hover #socialLinks,
+        #promoTab2:hover #socialLinks {
+            display: flex;
+            color: darkorchid;
+        }
+        #socialLinks a {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0c33ee;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        #socialLinks a:hover {
+            background-color: darkorchid;
+        }
         h4 {
             text-align: center;
             color: grey;
@@ -315,29 +369,31 @@
                     <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
                 </li>
                 <li class="tab">
-                    <a style="color:red; font-size: 17px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"><b>Last Updated: 0.7.0</b></a>
+                    <a style="color:red; font-size: 17px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"><b>Last Updated: 0.8.0</b></a>
                 </li>
             </ul>
         </nav>
-                <div id="promoTab">
-                <div id="socialLinks">
-                    <a href="https://github.com/SquareZeb" target="_blank">Github</a>
-                    <a href="https://www.youtube.com/channel/UCSPSGIg3wWMowzCL-1tc_Hg" target="_blank">Youtube</a>
-                    <a href="https://discord.gg/vzkMs8sH2z" target="_blank">Discord</a>
-                </div>
-                <img src="Images/SZ-Promo.png" alt="Social Icon" width="30" height="30" style="border-radius: 50%">
-                Created by: <span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span>
-        </div>
-        <div id="promoTab">
+    </div>
+    </header>
+        <div id="promoTabsContainer">
+        <div id="promoTab2">
             <div id="socialLinks">
                 <a href="https://github.com/SquareZeb" target="_blank">Github</a>
                 <a href="https://www.youtube.com/channel/UCSPSGIg3wWMowzCL-1tc_Hg" target="_blank">Youtube</a>
                 <a href="https://discord.gg/vzkMs8sH2z" target="_blank">Discord</a>
             </div>
-            <img src="Images/SZ-Promo.png" alt="Social Icon" width="30" height="30" style="border-radius: 50%">
-            Created by: <span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span>
+             <span style="color: lawngreen; font-family: 'Roboto', sans-serif;"><span style="color: white;">Created by:</span> Square</span><span style="color: aqua;">Zeb</span>
+
+        </div>
+        <div id="promoTab1">
+            <div id="socialLinks">
+                <a href="https://github.com/SkyLandYT2" target="_blank">Github</a>
+                <a href="https://www.youtube.com/@SkyLandYT2" target="_blank">Youtube</a>
+                <a href="https://discord.gg/88bAD62dvY" target="_blank">Discord</a>
+            </div>
+            <span style="font-family: 'Roboto', sans-serif;">And by: SkyLandYT2</span>
+        </div>
     </div>
-    </header>
     <div class="content">
         <h1>Voices of the Void</h1>
         <h2 style="text-align:center; font-style:italic;">All Hidden Secrets and Easter Eggs</h2>
