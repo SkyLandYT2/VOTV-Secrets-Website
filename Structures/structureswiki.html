@@ -13,6 +13,32 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        /* Стиль при наведении курсора */
+.button:hover {
+  background-color: #3e8e41; /* Темнее при наведении */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Тень */
+}
+
+/* Стиль при нажатии */
+.button:active {
+  background-color: #367c39; /* Еще темнее при нажатии */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Меньшая тень */
+  transform: translateY(2px); /* Небольшое смещение вниз */
+}
+
+/* Стиль для кнопок с различным фоновым цветом */
+.button-blue {
+  background-color: #2196F3; /* Синий */
+}
+
+.button-red {
+  background-color: #f44336; /* Красный */
+}
+
+.button-small {
+  font-size: 12px;
+  padding: 10px 20px;
+}
     </style>
 </head>
 <body>
@@ -127,7 +153,7 @@
             Description:
         </h4>
         <p id="11" style="text-align:left;">The main base is the general main area where the player resides in.</p>
-        <button id="moreInfoBtn" class="content" style="left: 33.5%">More Information</button>
+        <p style="text-align: center;"><button id="moreInfoBtn" class="button button-red button-small" style="left: 33.5%;">More Information</button></p>
         <div id="moreInfo" style="display: none;">
             <div class="container">
                 <img src="../Structures/Images/14.png" alt="VOTV Archive Image" width="606" height="343" onclick="openImage(this)">
@@ -315,7 +341,7 @@
         <div class="container">
             <img src="../Structures/Images/36.png" alt="VOTV Archive Image" width="606" height="343" onclick="openImage(this)">
         </div>
-        <button id="moreInfoBtn0" class="content" style="left: 33.5%">More Information</button>
+        <p style="text-align: center;"><button id="moreInfoBtn0" class="button button-red button-small" style="left: 33.5%;">More Information</button></p>
         <div id="moreInfo0" style="display: none;">
             <p style="text-align:left;">Stage 1</p>
             <div class="container">
@@ -420,16 +446,28 @@
         <div class="container">
             <img src="../Structures/Images/67.png" alt="VOTV Archive Image" width="606" height="343" onclick="openImage(this)">
         </div>
-
-        <h3 id="abcave" style="text-align:center; font-style:oblique;">Bunk House</h3>
+        <div class="content" style=" left: -0.68%;"><hr></div>
+        <h3 id="abond3h" style="text-align:center; font-style:oblique;">Bunk House</h3>
         <h4 style="text-align:left;">
             Description:
         </h4>
-        <p id="40" style="text-align:left;">Abandoned 3 houses with beds without mattresses. located next to <a style="color: greenyellow;" href="#thehole">The Hole</a>.</p>
+        <p id="40" style="text-align:left;">Abandoned 3 houses on  X: -563, Y: -55 with beds without mattresses. located next to <a style="color: greenyellow;" href="#thehole">The Hole</a>.</p>
         <div class="container">
             <img src="../Structures/Images/81.png" alt="VOTV Archive Image" width="606" height="343" onclick="openImage(this)">
             <img src="../Structures/Images/82.png" alt="VOTV Archive Image" width="606" height="343" onclick="openImage(this)">
         </div>
+     
+        <div class="content" style=" left: -0.68%;"><hr></div>
+        <h3 id="goatstatue" style="text-align:center; font-style:oblique;">Goat statue</h3>
+        <h4 style="text-align:left;">
+            Description:
+        </h4>
+        <p id="41" style="text-align: left;">A statue of a goat on X: 13 Y: 580. with a plaque that reads</p>
+        <p style="text-align: left;">"WIlliam The Protector"<br />And may the hungry be fed...<br />...may the weak be defended...<br />...and my enemies shall perish.<br />In the memory of the great one&nbsp;<br />The one who protects us.</p>        <div class="container">
+            <img src="../Structures/Images/83.png" alt="VOTV Archive Image" width="400" height="343" onclick="openImage(this)">
+        </div>
+        <div class="content" style=" left: -0.68%;"><hr></div>
+        
         <script src="../Scripts/warning.js"></script>
         
         

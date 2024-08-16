@@ -12,6 +12,49 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 
 document.write(`
 <!DOCTYPE html>
+
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.9375em 2em; /* Используем относительные размеры */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em; /* Относительный размер шрифта */
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+        .button:hover {
+  background-color: #3e8e41; /* Темнее при наведении */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Тень */
+}
+
+/* Стиль при нажатии */
+.button:active {
+  background-color: #367c39; /* Еще темнее при нажатии */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Меньшая тень */
+  transform: translateY(2px); /* Небольшое смещение вниз */
+}
+
+/* Стиль для кнопок с различным фоновым цветом */
+.button-blue {
+  background-color: #2196F3; /* Синий */
+}
+
+.button-red {
+  background-color: #f44336; /* Красный */
+}
+
+.button-small {
+  font-size: 12px;
+  padding: 10px 20px;
+}
+</style>
 <html>
 <head>
     <style>
@@ -321,16 +364,11 @@ document.write(`
                 <li class="tab"><a href="../Objects/objectswiki.html">Objects</a></li>
                 <li class="tab"><a href="../Entities/entitieswiki.html">Entities</a></li>
                 <li class="tab">
-                    <a>Promotabs</a>
-                    <ul class="generated-links">
-                        <li><a href="../Promotabs/promotab1.html">Promo Tab 1</a></li>
-                        <li><a href="../Promotabs/promotab2.html">Promo Tab 2</a></li>
-                    </ul>
-                </li>
-                <li class="tab">
                     <a>Worlds</a>
                     <ul class="generated-links">
                         <li><a href="../Worlds/otherworldswiki.html">Other Worlds</a></li>
+                        <li><a href="../Worlds/anomalyworldswiki.html">Anomaly Worlds</a></li>
+                        <li><a href="../Worlds/testlevelswiki.html">Test Worlds</a></li>
                     </ul>
                 </li>
                 <li class="tab">
