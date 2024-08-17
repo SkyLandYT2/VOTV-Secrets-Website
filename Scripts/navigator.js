@@ -1,14 +1,3 @@
-var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
-if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
-{
-  let window = _____WB$wombat$assign$function_____("window");
-  let self = _____WB$wombat$assign$function_____("self");
-  let document = _____WB$wombat$assign$function_____("document");
-  let location = _____WB$wombat$assign$function_____("location");
-  let top = _____WB$wombat$assign$function_____("top");
-  let parent = _____WB$wombat$assign$function_____("parent");
-  let frames = _____WB$wombat$assign$function_____("frames");
-  let opener = _____WB$wombat$assign$function_____("opener");
 
 document.write(`
 <!DOCTYPE html>
@@ -29,7 +18,7 @@ document.write(`
     transition: all 0.3s ease;
 }
 
-        .button:hover {
+ .button:hover {
   background-color: #3e8e41; /* Темнее при наведении */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Тень */
 }
@@ -259,7 +248,7 @@ document.write(`
         #promoTab1, #promoTab2 {
             background-color: #007bff;
             color: #fff;
-            padding: 7px 10px;
+            padding: 7px 13px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 15px;
@@ -274,7 +263,7 @@ document.write(`
             flex-direction: row;
             align-items: center;
             gap: 10px;
-            font-size: 13px;
+            font-size: 11px;
             position: absolute;
             top: 50%;
             left: 100%;
@@ -294,7 +283,7 @@ document.write(`
             text-decoration: none;
             color: #fff;
             background-color: #0c33ee;
-            padding: 3px 10px;
+            padding: 3px 11px;
             border-radius: 5px;
             font-size: 14px;
         }
@@ -396,7 +385,18 @@ document.write(`
                 <li class="tab"><a href="../Dreams/dreamswiki.html">Dreams</a></li>
                 <li class="tab"><a href="../Achievements/achievementswiki.html">Achievements</a></li>
                 <li class="tab"><a href="../GameEndings/endingswiki.html">Game Endings</a></li>
-                <li class="tab"><a href="../InteractiveMap/interactablemap.html">Map of Everything</a></li>
+                <li class="tab">
+                    <a>Map of everything</a>
+                    <ul class="generated-links">
+                        <li><a href="https://questwalker.github.io/votv-map/">questwalker's map</a></li>
+                          <li><a href="https://squarezeb.github.io/Interactive-Map-For-VOTV/">squarezeb's map</a></li>
+                     </ul>
+                <li class="tab">
+                    <a>Other</a>
+                    <ul class="generated-links">
+                        <li><a href="../Other/translator.html">Arir translator</a></li>
+                    </ul>
+                </li>
                 <li class="tab">
                     <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
                 </li>
@@ -415,6 +415,7 @@ document.write(`
                 <li class="tab">
                     <a style="color:red; font-size: 14px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"><b>Last Updated: 0.8.0 WIP</b></a>
                 </li>
+                
             </ul>
         </nav>
     </header>
@@ -442,5 +443,3 @@ document.write(`
 
 `);
 
-
-}

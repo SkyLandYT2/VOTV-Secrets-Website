@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: rgb(192, 206, 201);
+            border-style: solid;
+            border-radius: 10px;
+            padding: 20px;
+            width: 800px;
+            text-align: center;
+        }
+        .container h3 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .container textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .placeholder-text {
+            margin-top: 20px;
+            width: 800px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <script src="../Scripts/navigator.js"></script>
+    </header>
+    <div class="container">
+        <h3 style="width: 500px;">Real-Time Translator</h3>
+        <button id="switchLang" onclick="switchLanguage()">Switch to Ariral ↔ English</button>
+        <textarea id="inputText" placeholder="Type text here..."></textarea>
+        <textarea id="outputText" placeholder="Translated text..." readonly></textarea>
+        <button style="text-align: center;" onclick="window.open('./Translations.html', '_blank')">Glossary</button>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="../Scripts/basejs.js"></script>
+    <script src="../Scripts/infobtnjs.js"></script>
+    <script src="../Scripts/searchbar.js"></script>
+    
+</body>
+</html>
