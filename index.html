@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta name="yandex-verification" content="1d5b5e972a6ae589" />
-
     <meta charset="utf-8">
     <title>Voices of the Void Secrets Archive</title>
     <style>
@@ -164,34 +163,42 @@
                 nav li a:hover {
                     background-color: #111;
                 }
-        .generated-links {
-            position: absolute;
-            left: 100%;
-            top: 0;
-            display: none;
-        }
-        .tab:hover .generated-links {
-            display: block;
-        }
-        .generated-links li {
-            margin-bottom: 5px;
-        }
-        .generated-links a {
-            display: block;
-            font-family: Arial;
-            color: white;
-            text-align: center;
-            padding: 5px;
-            text-decoration: none;
-            background-color: #222;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-bottom: 0px;
-        }
+                .generated-links {
+                position: absolute;
+                 left: 100%;
+                top: 0;
+                display: none;
+                }
+
+                .tab {
+                    position: relative; /* Добавьте это */
+                }
+
+
+                .tab:hover .generated-links {
+                display: block;
+                }
+
+                .generated-links li {
+                margin-bottom: 5px;
+                }
+
+                .generated-links a {
+                display: block;
+                font-family: Arial;
+                color: white;
+                text-align: center;
+                padding: 5px;
+                text-decoration: none;
+                background-color: #222;
+                }
+              .container {
+               display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              margin-bottom: 0px;
+                     }
             .container img {
                 display: block;
                 max-width: 600px;
@@ -343,7 +350,11 @@
                     <a href="GameEndings/endingswiki.html">Game Endings</a>
                 </li>
                 <li class="tab">
-                    <a href="InteractiveMap/interactablemap.html">Map of Everything</a>
+                    <a>Map of Everything</a>
+                    <ul class="generated-links">
+                      <li><a href="https://questwalker.github.io/votv-map/">questwalker's map</a></li>
+                      <li><a href="https://squarezeb.github.io/Interactive-Map-For-VOTV/">squarezeb's map</a></li>
+                    </ul>
                 </li>
                 <li class="tab">
                     <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
