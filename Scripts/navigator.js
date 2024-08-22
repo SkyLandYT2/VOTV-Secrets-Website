@@ -248,10 +248,10 @@ document.write(`
         #promoTab1, #promoTab2 {
             background-color: #007bff;
             color: #fff;
-            padding: 7px 13px;
-            border-radius: 5px;
+            padding: 7px 10px;
+            border-radius: 3px;
             cursor: pointer;
-            font-size: 15px;
+            font-size: 12px;
             position: relative;
             z-index: 1;
         }
@@ -410,32 +410,27 @@ document.write(`
                     <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
                 </li>
                 <li class="tab">
-                    <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
-                </li>
-                <li class="tab">
-                    <a style="color:red; font-size: 14px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"><b>Last Updated: 0.8.0 WIP</b></a>
+                    <a style="color:red; font-size: 14px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"><b>Last Updated: 0.8.0</b></a>
                 </li>
                 
             </ul>
         </nav>
     </header>
-    <div id="promoTabsContainer">
-        <div id="promoTab2">
-            <div id="socialLinks">
-                <a href="https://github.com/SquareZeb" target="_blank">Github</a>
-                <a href="https://www.youtube.com/channel/UCSPSGIg3wWMowzCL-1tc_Hg" target="_blank">Youtube</a>
-                <a href="https://discord.gg/vzkMs8sH2z" target="_blank">Discord</a>
-            </div>
-             <span style="color: lawngreen; font-family: 'Roboto', sans-serif;"><span style="color: white;">Created by:</span> Square</span><span style="color: aqua;">Zeb</span>
-
-        </div>
+        <div id="promoTabsContainer">
+            <div id="promoTab2">
+                <div id="socialLinks">
+                    <a href="https://github.com/SquareZeb" target="_blank">Github</a>
+                     <a href="https://www.youtube.com/channel/UCSPSGIg3wWMowzCL-1tc_Hg" target="_blank">Youtube</a> 
+                     <a href="https://discord.gg/vzkMs8sH2z" target="_blank">Discord</a></div>
+                     <span style="color: lawngreen; font-family: 'Roboto', sans-serif;"><span style="color: white;">
+                     <img src="../images/SZ-promo.png" alt="SZ" width="20" height="20" /> Created by:</span> Square</span><span style="color: aqua;">Zeb</span>
+                </div>
         <div id="promoTab1">
-            <div id="socialLinks">
-                <a href="https://github.com/SkyLandYT2" target="_blank">Github</a>
-                <a href="https://www.youtube.com/@SkyLandYT2" target="_blank">Youtube</a>
-                <a href="https://discord.gg/88bAD62dvY" target="_blank">Discord</a>
-            </div>
-            <span style="font-family: 'Roboto', sans-serif;">And by: SkyLandYT2</span>
+            <div id="socialLinks"><a href="https://github.com/SkyLandYT2" target="_blank">Github</a>
+                 <a href="https://www.youtube.com/@SkyLandYT2" target="_blank">Youtube</a> 
+                 <a href="https://discord.gg/88bAD62dvY" target="_blank">Discord</a></div>
+                 <span style="font-family: 'Roboto', sans-serif;">
+                 <img src="https://avatars.githubusercontent.com/u/83461291?s=400&v=4" alt="SL" width="20" height="20" /> And by: SkyLandYT2</span>
         </div>
     </div>
 </body>

@@ -1,82 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script type="text/javascript" src="..\Scripts\bundle-playback.js" charset="utf-8"></script>
-<script type="text/javascript" src="..\Scripts\wombat.js" charset="utf-8"></script>
-<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
-<script type="text/javascript" src="..\Scripts\ruffle/ruffle.js"></script>
-<script type="text/javascript">
-</script>
-
-
-
     <meta charset="utf-8">
     <title>Endings VOTV Archive</title>
     <style>
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url("../Images/3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 16px; /* Основной размер шрифта */
-    line-height: 1.5; /* Высота строки для удобочитаемости */
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 0.9375em 2em; /* Используем относительные размеры */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em; /* Относительный размер шрифта */
-    margin: 0.25em 0.125em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-img {
-    width: 100%; /* Изображения заполняют контейнер */
-    height: auto; /* Сохраняем пропорции изображения */
-}
-h1, h2, h3, h4 {
-    text-align: center; 
-    font-style: oblique;
-}
-
-/* Стиль при наведении курсора */
-.button:hover {
-  background-color: #3e8e41; /* Темнее при наведении */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Тень */
-}
-
-/* Стиль при нажатии */
-.button:active {
-  background-color: #367c39; /* Еще темнее при нажатии */
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Меньшая тень */
-  transform: translateY(2px); /* Небольшое смещение вниз */
-}
-
-/* Стиль для кнопок с различным фоновым цветом */
-.button-blue {
-  background-color: #2196F3; /* Синий */
-}
-
-.button-red {
-  background-color: #f44336; /* Красный */
-}
-
-.button-small {
-  font-size: 12px;
-  padding: 10px 20px;
-}
-
-.container {
-    width: 100%; /* Ширина контейнера зависит от экрана */
-    max-width: 1200px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центровка контейнера */
-}
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("../Images/3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
@@ -91,9 +24,9 @@ h1, h2, h3, h4 {
         <p style="text-align:center;">In Voices of the Void, there are multiple game endings. Each of these endings have different ways of being obtained and triggered.</p>
         <div class="content" style=" left: -0.68%;"><hr></div>
         <h3 id="normal" style="text-align:center; font-style:oblique;">Normal Ending</h3>
-        <p style="text-align:center;">To achieve this, you must play all events days in story mode to unlock.</p>
+        <p style="text-align:center;">To achieve this, you must play at least 44-45 days in story mode to unlock.</p>
         <p style="text-align:center;">
-            <button class="button button-red button-small" id="moreInfoBtn1">More Information</button>
+            <button id="moreInfoBtn1"; class="button button-red button-small">More Information</button>
             <div id="moreInfo1" style="display: none; color: white;">
                 <pre>
                                                                 This appears to be symbolic of Dr. Kel's insanity or the player's  own character's insanity catching up to him.
@@ -104,24 +37,24 @@ h1, h2, h3, h4 {
         <h3 id="worst" style="text-align:center; font-style:oblique;">Worst Ending</h3>
         <p style="text-align:center;">To trigger this ending, you need to catch, download, process to level 3, and send over the <a style="color: greenyellow;" href="../Signals/specialsigswiki.html#evil">Evil Signal</a>.</p>
         <div class="container">
-            <img src="./Images/1.png" alt="VOTV Archive Image" onclick="openImage(this)">
+            <img src="../GameEndings/Images/1.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">Once that is done, a bunch of warning emails or messages will appear telling you to delete that particular signal. And a white cube will appear below your world in front of the Kerfus facial animation, this is the Evil_C entity which spawned will give the player an X amount of time before the game over.</p>
         <div class="container">
-            <img src="./Images/2.png" alt="VOTV Archive Image" onclick="openImage(this)">
+            <img src="../GameEndings/Images/2.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">Assuming you ignore those messages and after a period of time you will be flashed a red screen which is essentally the evil texture just overlaying all over everything in you world.</p>
         <div class="container">
-            <img src="./Images/3.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
-            <img src="./Images/4.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
-            <img src="./Images/11.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
+            <img src="../GameEndings/Images/3.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
+            <img src="../GameEndings/Images/4.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
+            <img src="../GameEndings/Images/5.png" alt="VOTV Archive Image" width="400" height="300" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">Then you are shown a terminal in which it explains what happens to you. You are terminated and converted by some mysterious beings. In this ending you kill and convert everything on Earth. This is the result of the Evil spreading towards Earth.</p>
         <div class="container">
-            <img src="./Images/6.png" alt="VOTV Archive Image" onclick="openImage(this)">
+            <img src="../GameEndings/Images/6.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">
-            <button class="button button-red button-small" id="moreInfoBtn">More Information</button>
+            <button id="moreInfoBtn"; class="button button-red button-small">More Information</button>
             <div id="moreInfo" style="display: none; color: white;">
                 <pre>
                                                                 While it is unknown who types out this message, it has been theorized to be the Arirals. 
@@ -153,11 +86,11 @@ h1, h2, h3, h4 {
         <h3 id="rufus" style="text-align:center; font-style:oblique;">Secret Rufus Ending</h3>
         <p style="text-align:center;">There is no way to obtain this ending in the newer versions as the developers have removed the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#rufus">Rufus's</a> ability to trigger it, however in previous versions you would need to go to the command console and type in the <a style="color: greenyellow;" href="../ConsoleCommands/consolecommandswiki.html#rufus">Console Command</a>. Soon after a <a style="color: greenyellow;" href="../Entities/entitieswiki.html#rufus">Rufus Entity</a> will spawn in your world and will begin chasing you down. You can either walk in the direction of the <a style="color: greenyellow;" href="../Objects/objectswiki.html#scp432">SCP-432</a> and cross paths with the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#rufus">Rufus Entity</a> or wait until it catches you.</p>
         <div class="container">
-            <img src="./Images/7.png" alt="VOTV Archive Image" onclick="openImage(this)">
+            <img src="../GameEndings/Images/7.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">As soon as you are caught it will promptly bring up a terminal screen similar to that of the Worst Ending however in this one you are killed due to "skill issue".</p>
         <div class="container">
-            <img src="./Images/8.png" alt="VOTV Archive Image" onclick="openImage(this)">
+            <img src="../GameEndings/Images/8.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <h4 style="text-align:center; font-style:oblique;">Transcript:</h4>
         <pre>
@@ -173,14 +106,14 @@ h1, h2, h3, h4 {
         <h3 id="badsun" style="text-align:center; font-style:oblique;">Bad Sun Ending</h3>
         <p style="text-align:center;">When the <a style="color: greenyellow;" href="../Events/triggerableeventswiki.html#badsun">Bad Sun Event</a> occurs, in order to trigger the ending you must die to the Bad Sun during the event.</p>
         <div class="container">
-            <img src="./Images/9.png" alt="VOTV Archive Image" onclick="openImage(this)">
+            <img src="../GameEndings/Images/9.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">As soon as you are killed it will promptly bring up a terminal screen similar to that of the <a style="color: greenyellow;" href="#worst">Worst Ending</a> and <a style="color: greenyellow;" href="#rufus">Secret Rufus Ending</a>. However in this one, more mysterious beings annihilate the sun and capture light.</p>
         <div class="container">
-            <img src="./Images/10.png" alt="VOTV Archive Image" onclick="openImage(this)">
+            <img src="../GameEndings/Images/10.png" alt="VOTV Archive Image" onclick="openImage(this)">
         </div>
         <p style="text-align:center;">
-            <button class="button button-red button-small" id="moreInfoBtn0">More Information</button>
+            <button id="moreInfoBtn0"; class="button button-red button-small">More Information</button>
             <div id="moreInfo0" style="display: none; color: white;">
                 <pre>
                                                                 It is also unknown who types out this message but it is theorized to be Rozitals. 
@@ -206,11 +139,8 @@ h1, h2, h3, h4 {
                 [GAME OVER]
             </p>
         </pre>
-        <script src="../Scripts/warning.js"></script>
-        
     </div>
     <script src="../Scripts/basejs.js"></script>
     <script src="../Scripts/infobtnjs.js"></script>
-    <script src="../Scripts/searchbar.js"></script>
 </body>
 </html>
